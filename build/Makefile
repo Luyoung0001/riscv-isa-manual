@@ -45,6 +45,7 @@ unpriv: unpriv-isa-asciidoc.pdf
 
 unpriv-isa-asciidoc.pdf: $(SRCDIR)/riscv-unprivileged.adoc $(SRCDIR)/*.adoc
 	@echo "Building Unprivileged ISA"
+	@lscpu
 	rm -f $@.tmp
 	asciidoctor-pdf $(ASCIIDOCTOR_OPTS) --out-file=$@.tmp $<
 	mv $@.tmp $@
