@@ -30,3 +30,13 @@ Alternative build methods, such as local builds and GitHub Action builds, are al
 <!-- ## Repo Activity
 
 ![Alt](https://repobeats.axiom.co/api/embed/ccec87dc4502f2ed7c216b670b5ed8efc33a1d4c.svg "Repobeats analytics image") -->
+
+## Building the Docs
+```
+make docker
+```
+If you see an error message like:
+
+`Fontconfig error: Cannot load default config file: No such file: (null)`
+
+when running `make docker`, don’t worry. This is a benign error and does not affect the build process or the final result.
